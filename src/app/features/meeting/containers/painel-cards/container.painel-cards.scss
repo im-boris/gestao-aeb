@@ -1,0 +1,26 @@
+.container-painel-cards {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-painel-cards {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(3, 32%);
+    grid-auto-rows: 30%;
+    row-gap: 1%;
+    column-gap: 1%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+    .grid-painel-cards {
+        grid-template-columns: 99%;
+        padding-bottom: 5px;
+    }
+}

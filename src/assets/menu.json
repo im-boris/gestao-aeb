@@ -1,0 +1,17 @@
+[
+    { 
+        "label": "Reunião", 
+        "icon": "pi pi-fw pi-calendar-plus",
+        "routerLink": "features/meeting/list"
+    },
+    { 
+        "label": "Chamados", 
+        "icon": "pi pi-fw pi-phone",
+        "routerLink": "features/meeting/edit"
+    },
+    { 
+        "label": "Recepção", 
+        "icon": "pi pi-fw pi-comment",
+        "routerLink": "features/meeting/edit"
+    }
+]

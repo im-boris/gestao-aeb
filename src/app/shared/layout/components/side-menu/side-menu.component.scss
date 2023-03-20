@@ -1,0 +1,25 @@
+@import "/src/styles.scss";
+
+:host ::ng-deep .p-megamenu	 {
+    border-radius: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+:host ::ng-deep .p-menuitem {
+    padding: 10px 0;
+}
+
+.container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    width: 95%;
+    transform: scale(0.9, 0.9);
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+}

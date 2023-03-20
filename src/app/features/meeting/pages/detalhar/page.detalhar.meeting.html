@@ -1,0 +1,19 @@
+<p-card>
+    <div class="area-conteudo-pagina">
+        <div class="grid-detalhar-page">
+            <div class="container-header">
+                <div class="titulo-local" *ngIf="local">
+                    <span>{{local.descricao}}</span>
+                </div>
+            </div>
+            <div class="container-table-reunioes">
+                <container-reunioes-agendadas [id]="idLocal">
+                </container-reunioes-agendadas>
+            </div>
+            <div class="container-area-botoes">
+                <button pButton pRipple type="button" label="Voltar" (click)="location.back()">
+                </button>
+            </div>
+        </div>
+    </div>
+</p-card>

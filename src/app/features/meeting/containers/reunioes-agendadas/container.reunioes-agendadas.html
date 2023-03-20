@@ -1,0 +1,24 @@
+<div class="container-table">
+    <p-table [value]="listaAgendamentos" styleClass="p-datatable-sm p-datatable-striped">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Título</th>
+                <th>Data</th>
+                <th>Local</th>
+                <th>Horario Inicio</th>
+                <th>Horario Fim</th>
+                <th>Cooperagem</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-agendamento>
+            <tr>
+                <td>{{agendamento.titulo}}</td>
+                <td>{{agendamento.data | date: 'dd/MM/yyyy'}}</td>
+                <td>{{agendamento.local.descricao}}</td>
+                <td>{{agendamento.horaInicio | date:'HH:mm'}}</td>
+                <td>{{agendamento.horaFim | date:'HH:mm'}}</td>
+                <td>{{agendamento.isCooperagem | bool}}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
