@@ -1,8 +1,0 @@
-<div class="container-painel-cards">
-    <div class="grid-painel-cards">
-        <component-card *ngFor="let local of (locais | async)"
-                        [local]="local"
-                        (detalha)="detalhar($event)">
-        </component-card>
-    </div>
-</div>

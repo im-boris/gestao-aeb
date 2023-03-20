@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgestao_aeb=self.webpackChunkgestao_aeb||[]).push([[30],{1030:(s,t,n)=>{n.r(t),n.d(t,{MeetingModule:()=>a});var u=n(1345),M=n(4125),o=n(8274);let a=(()=>{class e{}return e.\u0275fac=function(l){return new(l||e)},e.\u0275mod=o.oAB({type:e}),e.\u0275inj=o.cJS({imports:[u.m,M.W]}),e})()}}]);
