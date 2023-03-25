@@ -1,4 +1,5 @@
 import { NgModule}  from '@angular/core';
+import { ChamadosModule } from './chamados/chamados.module';
 import { FeaturesRoutingModule } from './features-routing.module';
 import { MeetingRoutingModule } from './meeting/meeting-routing.module';
 
@@ -7,6 +8,7 @@ import { MeetingRoutingModule } from './meeting/meeting-routing.module';
   imports: [
     FeaturesRoutingModule,
     MeetingRoutingModule,
+    ChamadosModule,
   ],
   exports: []
 })

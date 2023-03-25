@@ -1,0 +1,26 @@
+<div class="container-card-reuniao">
+    <div class="conteudo">
+        <div class="area-titulo">
+            <span class="ellipsis">{{chamado.id}}</span>
+        </div>
+        <div class="area-informacoes">
+            <div class="campo-data">
+                <span>Abertura</span>
+                <span>{{chamado.dataAbertura | date: 'dd/MM/yyyy'}}</span>
+            </div>
+            <div class="campo-data">
+                <span>Suspensão</span>
+                <span>{{chamado.dataSuspensao | date: 'dd/MM/yyyy'}}</span>
+            </div>
+            <div class="campo-data">
+                <span>Atendimento</span>
+                <span>{{chamado.dataAtendimento | date: 'dd/MM/yyyy'}}</span>
+            </div>
+        </div>
+        <div class="area-acoes">
+            <span class="status-chamado">
+                {{chamado.status?.descricao | lowercase}}
+            </span>
+        </div>
+    </div>
+</div>

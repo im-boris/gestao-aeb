@@ -9,6 +9,13 @@ const routes: Routes = [
         (m) => m.MeetingModule
       )
   },
+  {
+    path: 'chamados',
+    loadChildren: () =>
+      import('./chamados/chamados.module').then(
+        (m) => m.ChamadosModule
+      )
+  },
   
 ];
 

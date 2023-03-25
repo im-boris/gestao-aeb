@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core'; 
 import { HttpClient } from '@angular/common/http';
 import { MegaMenuItem } from 'primeng/api';
- 
+import { environment } from 'src/environments/environment';
+
 @Component({
   selector: 'app-side-menu',
   templateUrl: './side-menu.component.html',
@@ -14,7 +15,7 @@ export class SideMenuComponent implements OnInit {
   constructor(private http: HttpClient){}
 
   ngOnInit() {
-    this.http.get<MegaMenuItem[]>("http://localhost:4200/assets/menu.json")
+    this.http.get<MegaMenuItem[]>(`${environment.LOCAL}/assets/menu.json`)
     .subscribe(items => this.items = items);
   }
   // https://primeng.org/megamenu

@@ -7,7 +7,7 @@
     { 
         "label": "Chamados", 
         "icon": "pi pi-fw pi-phone",
-        "routerLink": "features/meeting/edit"
+        "routerLink": "features/chamados/list"
     },
     { 
         "label": "Recepção", 

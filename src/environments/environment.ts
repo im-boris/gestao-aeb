@@ -3,5 +3,5 @@ export const environment = {
   AMBIENTE: 'dev',
   REST_URL: 'http://localhost:9099',
   BASE_API: '/angular',
-  SERVICE: 'http://localhost:4200',
+  LOCAL: 'http://localhost:4200',
 };

@@ -1,0 +1,10 @@
+<div class="header">
+    <div class="titulo">
+        <span>Chamados</span>
+    </div>
+    <p-dropdown [options]="(status | async)!" 
+                [(ngModel)]="statusSelecionado" 
+                optionLabel="descricao"
+                (ngModelChange)="setStatusSelecionado()">
+    </p-dropdown>
+</div>
