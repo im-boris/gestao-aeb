@@ -71,7 +71,13 @@
         <span class="txt-cooperagem">Deseja serviço de cooperagem ?</span>
     </div>
     <div class="botoes">
-        <button pButton pRipple type="button" label="Cancelar" id="cancelar" (click)="ref.close()"></button>
-        <button pButton pRipple type="button" label="Salvar" class="primary" (click)="salvar()"></button>
+        <button pButton pRipple type="button" 
+                label="Cancelar" id="cancelar" 
+                (click)="ref.close()">
+        </button>
+        <button pButton pRipple type="button" 
+                label="Salvar" class="primary" 
+                (click)="salvar()" [disabled]="form.desabilitarBotao()">
+        </button>
     </div>
 </div>

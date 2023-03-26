@@ -52,33 +52,23 @@ export class MeetingService{
         return [
             {
                 id: 1,
-                descricao: 'Bloco A - Sala 1',
+                descricao: 'Sala 1',
                 capacidade: 10
             },
             {
                 id: 2,
-                descricao: 'Bloco B - Sala 2',
+                descricao: 'Sala 2',
                 capacidade: 15
             },
             {
                 id: 3,
-                descricao: 'Bloco B - Sala 3',
+                descricao: 'Sala 3',
                 capacidade: 25
             },
             {
                 id: 4,
-                descricao: 'Bloco A - Sala 4',
+                descricao: 'Sala 4',
                 capacidade: 20
-            },
-            {
-                id: 5,
-                descricao: 'Bloco D - Auditório',
-                capacidade: 12
-            },
-            {
-                id: 6,
-                descricao: 'Bloco C - Sala de conferência',
-                capacidade: 9
             }
         ];
     }

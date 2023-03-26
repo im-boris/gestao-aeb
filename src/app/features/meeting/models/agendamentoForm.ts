@@ -10,6 +10,10 @@ export class AgendamentoForm {
         this.values = Agendamento.fromJson(Agendamento, new Agendamento());
     }
 
+    desabilitarBotao() {
+        return this.values.local?.id ? false : true;
+    }
+
     setDescOpcao(idOpcao: number) {
         this.values.opcaoReuniao!.descOpcao = OpcaoReuniao.getDescricaoOpcao(idOpcao);
     }

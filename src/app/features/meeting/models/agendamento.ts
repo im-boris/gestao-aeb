@@ -16,6 +16,7 @@ export class Agendamento extends BaseModel<idType>{
         public quantidadePessoas?: number,
         public opcaoReuniao?: OpcaoReuniao,
     ) { 
+        local = new Local();
         opcaoReuniao = new OpcaoReuniao();
         super();
     }
