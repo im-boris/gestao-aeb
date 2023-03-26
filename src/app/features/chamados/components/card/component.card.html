@@ -1,6 +1,6 @@
-<div class="container-card-reuniao">
+<div class="container-card-reuniao" [ngClass]="{'borda-cinza': chamado.status?.descricao === 'SUSPENSO'}">
     <div class="conteudo">
-        <div class="area-titulo">
+        <div class="area-titulo" [ngClass]="{'cor-cinza': chamado.status?.descricao === 'SUSPENSO'}">
             <span class="ellipsis">{{chamado.id}}</span>
         </div>
         <div class="area-informacoes">
@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="area-acoes">
-            <span class="status-chamado" [ngClass]="{'cor-cinza': chamado.status?.descricao === 'SUSPENSO'}">
+            <span class="status-chamado">
                 {{chamado.status?.descricao | lowercase}}
             </span>
         </div>
