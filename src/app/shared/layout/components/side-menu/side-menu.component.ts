@@ -10,13 +10,29 @@ import { environment } from 'src/environments/environment';
 })
 export class SideMenuComponent implements OnInit {
 
-  items: MegaMenuItem[] = []
+  items: MegaMenuItem[] = [
+    { 
+        "label": "Reunião", 
+        "icon": "pi pi-fw pi-calendar-plus",
+        "routerLink": "features/meeting/list"
+    },
+    { 
+        "label": "Chamados", 
+        "icon": "pi pi-fw pi-phone",
+        "routerLink": "features/chamados/list"
+    },
+    { 
+        "label": "Recepção", 
+        "icon": "pi pi-fw pi-comment",
+        "routerLink": "features/meeting/edit"
+    }
+]
 
   constructor(private http: HttpClient){}
 
   ngOnInit() {
-    this.http.get<MegaMenuItem[]>(`${environment.LOCAL}/assets/menu.json`)
-    .subscribe(items => this.items = items);
+    // this.http.get<MegaMenuItem[]>(`${environment.LOCAL}/assets/menu.json`)
+    // .subscribe(items => this.items = items);
   }
   // https://primeng.org/megamenu
 }
